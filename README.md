@@ -18,3 +18,4 @@
 
 #### Notes
 - tea stores its configuration in a file named 'tea.yml', which the above will store on a volume named 'tea' so that it might persist
+- a pre-built [image](https://hub.docker.com/repository/docker/tgerczei/tea) is published via the Docker Hub
