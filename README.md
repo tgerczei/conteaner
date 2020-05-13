@@ -3,7 +3,7 @@
 ### Build
 - docker build . -t gitea/tea:0.3.0
 
-...or to build a specific release (see 'https://gitea.com/gitea/tea/releases'):
+...or to build a specific release (check [here](https://gitea.com/gitea/tea/releases)):
 
 - export VERSION="<b>0.2.0</b>"
 - docker build . -t "gitea/tea:${VERSION}" --build-arg VERSION="${VERSION}"
@@ -16,4 +16,5 @@
 ### Usage
 - tea
 
-#### <i>tea stores its configuration in a file named 'tea.yml', which the above will store on a volume named 'tea' so that it might persist</i>
+#### Notes
+- tea stores its configuration in a file named 'tea.yml', which the above will store on a volume named 'tea' so that it might persist
