@@ -8,6 +8,12 @@
 - export VERSION="<b>0.2.0</b>"
 - docker build . -t "gitea/tea:${VERSION}" --build-arg VERSION="${VERSION}"
 
+...alternatively for development version:
+
+- docker build . -t "gitea/tea:latest" --build-arg VERSION="development"
+
+The version of Go used during the build can also be overridden by appending e.g. '--build-arg GOVERSION="<b>1.13.10</b>"'
+
 ### Configuration
 - docker volume create tea
 - alias tea='docker run --rm -v tea:/app gitea/tea:<b><your_release></b>'
