@@ -1,10 +1,10 @@
-ARG GOVERSION="1.14.2"
+ARG GOVERSION="1.14.4"
 
 FROM golang:${GOVERSION}-alpine AS buildenv
 
 ARG REPO="https://gitea.com/gitea/tea.git"
 
-ARG VERSION="0.3.0"
+ARG VERSION="0.3.1"
 ENV TEA_VERSION="${VERSION}"
 
 ARG CGO_ENABLED="0"
