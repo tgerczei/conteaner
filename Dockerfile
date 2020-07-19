@@ -27,9 +27,11 @@ RUN	apk add --quiet --no-cache git && \
 	go build -v -a -ldflags "-X main.Version=${TEA_VERSION}" -o /tea .
 
 FROM scratch
+ARG BUILD_DATE
+ARG VERSION
 LABEL org.opencontainers.image.title="Gitea - Git with a cup of tea"
 LABEL org.opencontainers.image.description="A command line tool to interact with Gitea servers"
-LABEL org.opencontainers.image.version="${TEA_VERSION}
+LABEL org.opencontainers.image.version="${VERSION}
 LABEL org.opencontainers.image.url="https://gitea.com/gitea/tea"
 LABEL org.opencontainers.image.authors="Tamás Gérczei <tamas@gerczei.eu>"
 LABEL org.opencontainers.image.created="${BUILD_DATE}"
