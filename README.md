@@ -1,7 +1,7 @@
 ## tea: A command line tool to interact with Gitea servers
 
 ### Build
-- docker build . -t gitea/tea:0.3.0
+- docker build . -t gitea/tea:0.5.0
 
 ...or to build a specific release (check [here](https://gitea.com/gitea/tea/releases)):
 
@@ -16,7 +16,7 @@ The version of Go used during the build can also be overridden by appending e.g.
 
 ### Configuration
 - docker volume create tea
-- alias tea='docker run --rm -v tea:/app gitea/tea:<b><your_release></b>'
+- alias tea='docker run --rm -v tea:/app -v $PWD:/repo:ro -w /repo gitea/tea:<b><your_release></b>'
 - tea login add -n <b><name_this_login></b> -u <b><your_gitea_url></b> -t <b><your_gitea_application_token></b> -i
 
 ### Usage
