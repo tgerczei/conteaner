@@ -1,7 +1,7 @@
 ## tea: A command line tool to interact with Gitea servers
 
 ### Build
-- docker build . -t gitea/tea:0.5.0
+- docker build . -t gitea/tea:0.6.0
 
 ...or to build a specific release (check [here](https://gitea.com/gitea/tea/releases)):
 
