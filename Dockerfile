@@ -22,7 +22,7 @@ RUN	apk add --quiet --no-cache git && \
 
 FROM scratch
 ARG BUILD_DATE
-ARG VERSION
+ARG VERSION="0.6.0"
 LABEL org.opencontainers.image.title="Gitea - Git with a cup of tea"
 LABEL org.opencontainers.image.description="A command line tool to interact with Gitea servers"
 LABEL org.opencontainers.image.version="${VERSION}"
